@@ -9,6 +9,5 @@
 #SBATCH --account civil-459
 #SBATCH --reservation civil-459
 
-sleep 10
 echo "hello from $(hostname)"
-sleep 10
+

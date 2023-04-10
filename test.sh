@@ -1,11 +1,14 @@
 #!/bin/bash
-#SBATCH --chdir /scratch/bpoffet
-#SBATCH --nodes 1
+#SBATCH --workdir /scratch/bpoffet
 #SBATCH --ntasks 1
 #SBATCH --cpus-per-task 1
-#SBATCH --mem 1G
-#SBATCH --account scitas-courses
-#SBATCH --reservation intro2clusters
+#SBATCH --mem 8G
+#SBATCH --partition gpu
+#SBATCH --gres gpu:1
+#SBATCH --qos dlav
+#SBATCH --account civil-459
+#SBATCH --reservation civil-459
+
 sleep 10
 echo "hello from $(hostname)"
 sleep 10

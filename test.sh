@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --chdir /scratch/<put-your-username-here>
+#SBATCH --chdir /scratch/bpoffet
 #SBATCH --nodes 1
 #SBATCH --ntasks 1
 #SBATCH --cpus-per-task 1

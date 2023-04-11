@@ -5,7 +5,7 @@
 #SBATCH --mem 8G
 #SBATCH --partition gpu
 #SBATCH --gres gpu:1
-#SBATCH --qos=dlav
+#SBATCH --qos=DLAV
 
 print("hello from bpoffet")
 

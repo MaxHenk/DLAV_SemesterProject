@@ -1,4 +1,5 @@
 #!/bin/bash
+#SBATCH --chdir /home/bpoffet/DLAV_SemesterProject
 #SBATCH --ntasks 1
 #SBATCH --cpus-per-task 1
 #SBATCH --mem 8G

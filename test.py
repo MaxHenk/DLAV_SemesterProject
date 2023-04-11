@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --chdir=/scratch/bpoffet/DLAV_SemesterProject
+#SBATCH --chdir=/scratch/bpoffet/DLAV_SemesterProject/test.py
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=8G

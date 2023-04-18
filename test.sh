@@ -9,6 +9,3 @@
 #SBATCH --account civil-459-2023
 
 echo "It worked!"
-
-print("print worked")
-

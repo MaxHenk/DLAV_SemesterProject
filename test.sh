@@ -6,8 +6,7 @@
 #SBATCH --mem 40G
 #SBATCH --partition gpu
 #SBATCH --gres gpu:1
-#SBATCH --qos gpu
-#SBATCH --account civil-459
+#SBATCH --account civil-459-2023
 #SBATCH --reservation dlav
 
 

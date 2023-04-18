@@ -1,0 +1,3 @@
+It worked!
+/var/spool/slurmd/job1347515/slurm_script: line 13: syntax error near unexpected token `"print worked"'
+/var/spool/slurmd/job1347515/slurm_script: line 13: `print("print worked")'

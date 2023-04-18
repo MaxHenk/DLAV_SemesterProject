@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -o=%j.out
+#SBATCH -o %j.out
 #SBATCH --nodes 1
 #SBATCH --ntasks-per-node 1
 #SBATCH --cpus-per-task 20
@@ -9,5 +9,5 @@
 #SBATCH --gres gpu:1
 #SBATCH --account civil-459-2023
 
-echo "It worked!" >> output_file
+echo "It worked!"
 

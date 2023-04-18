@@ -10,3 +10,5 @@
 
 echo "It worked!"
 
+print("print worked")
+

@@ -1,8 +1,9 @@
 #!/bin/bash
-#SBATCH --chdir=/scratch/bpoffet/DLAV_SemesterProject
+#SBATCH --chdir=/scratch/bpoffet/DLAV_SemesterProject/test.sh
 #SBATCH --nodes 1
 #SBATCH --ntasks-per-node 1
 #SBATCH --cpus-per-task 20
+#SBATCH --begin=now
 #SBATCH --mem 40G
 #SBATCH --partition gpu
 #SBATCH --gres gpu:1

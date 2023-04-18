@@ -9,7 +9,5 @@
 #SBATCH --gres gpu:1
 #SBATCH --account civil-459-2023
 
-
-
-echo "It worked!"
+echo "It worked!" >> output_file
 

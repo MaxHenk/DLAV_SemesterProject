@@ -1,6 +1,5 @@
 #!/bin/bash
-#SBATCH --chdir=/home/bpoffet/DLAV_SemesterProject
-#SBATCH -o /home/bpoffet/DLAV_SemesterProject/%j.out
+#SBATCH -o=%j.out
 #SBATCH --nodes 1
 #SBATCH --ntasks-per-node 1
 #SBATCH --cpus-per-task 20

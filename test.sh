@@ -7,7 +7,7 @@
 #SBATCH --partition gpu
 #SBATCH --gres gpu:1
 #SBATCH --account civil-459-2023
-#SBATCH --reservation dlav
+#SBATCH --reservation civil-459-2023
 
 
 print("hello from bpoffet")

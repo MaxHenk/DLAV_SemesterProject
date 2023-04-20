@@ -1,11 +1,11 @@
 # Step-by-step installation instructions
 
-Following https://mmdetection3d.readthedocs.io/en/latest/getting_started.html#installation
+#Following https://mmdetection3d.readthedocs.io/en/latest/getting_started.html#installation
 
 
 ##a. Create a conda virtual environment and activate it.
-conda create -n open-mmlab python=3.8 -y
-conda activate open-mmlab
+#conda create -n open-mmlab python=3.8 -y
+#conda activate open-mmlab
 
 ##b. Install PyTorch and torchvision following the [official instructions](https://pytorch.org/).
 pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html

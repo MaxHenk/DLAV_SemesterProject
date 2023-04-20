@@ -10,4 +10,6 @@
 #SBATCH --reservation civil-459
 #SBATCH --account civil-459-2023
 
+python3 test.py
+
 echo "It worked!"

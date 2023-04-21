@@ -6,8 +6,6 @@
 #SBATCH --mem 40G
 #SBATCH --partition gpu
 #SBATCH --gres gpu:1
-#SBATCH --account civil-459-2023
 
-source venvs/bin/activate
 
 python3 install.py

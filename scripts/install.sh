@@ -8,4 +8,4 @@
 #SBATCH --gres gpu:1
 
 
-python3 install.py
+python3 install2.py

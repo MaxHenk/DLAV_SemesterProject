@@ -1,0 +1,17 @@
+Looking in links: https://download.pytorch.org/whl/torch_stable.html
+Requirement already satisfied: torch==1.9.1 in /home/bpoffet/venvs/lib/python3.7/site-packages (1.9.1+rocm4.2)
+Requirement already satisfied: torchvision==0.10.1 in /home/bpoffet/venvs/lib/python3.7/site-packages (0.10.1+rocm4.2)
+Requirement already satisfied: torchaudio==0.9.1 in /home/bpoffet/venvs/lib/python3.7/site-packages (0.9.1)
+Requirement already satisfied: typing-extensions in /home/bpoffet/venvs/lib/python3.7/site-packages (from torch==1.9.1) (4.5.0)
+Requirement already satisfied: numpy in /ssoft/spack/arvine/v1/opt/spack/linux-rhel7-skylake_avx512/gcc-8.4.0/python-3.7.7-drpdlwdbo3lmtkcbckq227ypnzno4ek3/lib/python3.7/site-packages (from torchvision==0.10.1) (1.18.5)
+Requirement already satisfied: pillow>=5.3.0 in /ssoft/spack/arvine/v1/opt/spack/linux-rhel7-skylake_avx512/gcc-8.4.0/python-3.7.7-drpdlwdbo3lmtkcbckq227ypnzno4ek3/lib/python3.7/site-packages (from torchvision==0.10.1) (7.0.0)
+Traceback (most recent call last):
+  File "install2.py", line 9, in <module>
+    subprocess.run(command)
+  File "/ssoft/spack/arvine/v1/opt/spack/linux-rhel7-skylake_avx512/gcc-8.4.0/python-3.7.7-drpdlwdbo3lmtkcbckq227ypnzno4ek3/lib/python3.7/subprocess.py", line 488, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/ssoft/spack/arvine/v1/opt/spack/linux-rhel7-skylake_avx512/gcc-8.4.0/python-3.7.7-drpdlwdbo3lmtkcbckq227ypnzno4ek3/lib/python3.7/subprocess.py", line 800, in __init__
+    restore_signals, start_new_session)
+  File "/ssoft/spack/arvine/v1/opt/spack/linux-rhel7-skylake_avx512/gcc-8.4.0/python-3.7.7-drpdlwdbo3lmtkcbckq227ypnzno4ek3/lib/python3.7/subprocess.py", line 1551, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda': 'conda'

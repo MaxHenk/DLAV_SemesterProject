@@ -8,7 +8,7 @@
 #conda activate open-mmlab
 
 ##b. Install PyTorch and torchvision following the [official instructions](https://pytorch.org/).
-python3 -m pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
+pip install torch==1.9.1 torchvision==0.10.1 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
 # Recommended torch>=1.9
 
 ##c. Install gcc>=5 in conda env (optional).

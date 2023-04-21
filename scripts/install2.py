@@ -3,12 +3,14 @@ import sys
 import os
 
 def run_command(command):
-    process = subprocess.run(command, capture_output=True, text=True)
+    process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
+    stdout, stderr = process.communicate()
+    
     if process.returncode != 0:
-        print(f"Erreur lors de l'exécution de la commande : {' '.join(command)}\n{process.stderr}")
+        print(f"Erreur lors de l'exécution de la commande : {' '.join(command)}\n{stderr}")
         sys.exit(1)
     else:
-        print(f"Commande réussie : {' '.join(command)}\n{process.stdout}")
+        print(f"Commande réussie : {' '.join(command)}\n{stdout}")
 
 # Créez un environnement virtuel
 venv_path = "open-mmlab"

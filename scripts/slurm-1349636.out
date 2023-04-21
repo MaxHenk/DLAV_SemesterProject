@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "install2.py", line 15, in <module>
-    run_command([sys.executable, "-m", "venv", venv_path])
-  File "install2.py", line 6, in run_command
-    process = subprocess.run(command, capture_output=True, text=True)
-  File "/usr/lib64/python3.6/subprocess.py", line 423, in run
-    with Popen(*popenargs, **kwargs) as process:
-TypeError: __init__() got an unexpected keyword argument 'capture_output'

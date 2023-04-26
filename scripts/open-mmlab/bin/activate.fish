@@ -52,7 +52,7 @@ if test -z "$VIRTUAL_ENV_DISABLE_PROMPT"
         set -l old_status $status
 
         # Prompt override?
-        if test -n "(open-mmlab) "
+        if test -n "(open-mmlab) "            
             printf "%s%s" "(open-mmlab) " (set_color normal)
         else
             # ...Otherwise, prepend env

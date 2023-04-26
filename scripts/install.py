@@ -2,7 +2,6 @@
 
 #Following https://mmdetection3d.readthedocs.io/en/latest/getting_started.html#installation
 
-import pip
 ##a. Create a conda virtual environment and activate it.
 #conda create -n open-mmlab python=3.8 -y
 #conda activate open-mmlab

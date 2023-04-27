@@ -1,3 +1,15 @@
+#!/bin/bash
+#SBATCH --nodes 1
+#SBATCH --ntasks-per-node 1
+#SBATCH --cpus-per-task 20
+#SBATCH --begin=now
+#SBATCH --mem 40G
+#SBATCH --partition gpu
+#SBATCH --gres gpu:1
+
+python3 -m venv DLAV_venv
+source DLAV_venv/bin/activate
+
 # Step-by-step installation instructions
 
 #Following https://mmdetection3d.readthedocs.io/en/latest/getting_started.html#installation

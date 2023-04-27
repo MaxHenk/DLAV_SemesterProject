@@ -1,0 +1,39 @@
+# Step-by-step installation instructions
+
+#Following https://mmdetection3d.readthedocs.io/en/latest/getting_started.html#installation
+
+##a. Create a conda virtual environment and activate it.
+#conda create -n open-mmlab python=3.8 -y
+#conda activate open-mmlab
+
+##b. Install PyTorch and torchvision following the [official instructions](https://pytorch.org/).
+pip install torch torchvision torchaudio -f https://download.pytorch.org/whl/torch_stable.html
+# Recommended torch>=1.9
+
+##c. Install gcc>=5 in conda env (optional).
+#conda install -c omgarcia gcc-6 # gcc-6.2
+
+##c. Install mmcv-full.
+pip install mmcv-full
+#  pip install mmcv-full==1.4.0 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.9.0/index.html
+
+##d. Install mmdet and mmseg.
+pip install mmdet
+pip install mmsegmentation
+
+##e. Install mmdet3d from source code.
+git clone https://github.com/open-mmlab/mmdetection3d.git
+cd mmdetection3d
+git checkout v0.17.1 # Other versions may not be compatible.
+pip install -v -e .
+
+##f. Install timm.
+pip install timm
+
+##g. Clone VoxFormer.
+git clone https://github.com/NVlabs/VoxFormer.git
+
+##h. Prepare pretrained resnet50 models.
+cd VoxFormer && mkdir ckpts && cd ckpts
+
+#Download the pretrained [resnet50](https://drive.google.com/file/d/1A4Efx7OQ2KVokM1XTbZ6Lf2Q5P-srsyE/view?usp=share_link).

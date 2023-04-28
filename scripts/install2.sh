@@ -1,3 +1,15 @@
+#!/bin/bash
+#SBATCH --nodes 1
+#SBATCH --ntasks-per-node 1
+#SBATCH --cpus-per-task 20
+#SBATCH --begin=now
+#SBATCH --mem 40G
+#SBATCH --partition gpu
+#SBATCH --gres gpu:1
+
+python3 -m venv DLAV_venv
+source DLAV_venv/bin/activate
+
 # Step-by-step installation instructions
 
 #Following https://mmdetection3d.readthedocs.io/en/latest/getting_started.html#installation
@@ -7,19 +19,19 @@
 #conda activate open-mmlab
 
 ##b. Install PyTorch and torchvision following the [official instructions](https://pytorch.org/).
-pip install torch==1.9.1 torchvision==0.10.1 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
+pip install torch torchvision torchaudio -f https://download.pytorch.org/whl/torch_stable.html
 # Recommended torch>=1.9
 
 ##c. Install gcc>=5 in conda env (optional).
-conda install -c omgarcia gcc-6 # gcc-6.2
+#conda install -c omgarcia gcc-6 # gcc-6.2
 
 ##c. Install mmcv-full.
-pip install mmcv-full==1.4.0
+pip install mmcv-full
 #  pip install mmcv-full==1.4.0 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.9.0/index.html
 
 ##d. Install mmdet and mmseg.
-pip install mmdet==2.14.0
-pip install mmsegmentation==0.14.1
+pip install mmdet
+pip install mmsegmentation
 
 ##e. Install mmdet3d from source code.
 git clone https://github.com/open-mmlab/mmdetection3d.git
